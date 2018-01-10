@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>家电卖场商家后台</title>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="wrap">
+    <div class="logo-box">
+        <h1 class="left">
+            <a href="" ><img src="img/001.png" alt="LOGO"/></a>
+        </h1>
+    </div>   
+</header>
+<div class="biaoti">
+    	<img src="img/008.png" />
+    </div>
+<article class="content clearfix">
+            <div class="login-form clearfix">
+                <form action="" method="post" id="loginForm">
+                	<div class="tupian"><img src="img/009.png"/></div>
+                	<div id="dd" class="clearfix">
+                		<img src="img/005.png" />
+                		<p>账号或密码填写错误</p>
+                	</div>
+                    <div class="item" >
+                        <label class="nick left"></label>
+                        <input id="username" type="text" name="nick" maxlength="11" placeholder="请输入账号"/>
+                    </div>
+                    <div class="item">
+                        <label class="psw left"></label>
+                        <input id="userpwd"  type="password" name="psw" maxlength="18" placeholder="请输入账号密码"/>
+                    </div>
+                    <div class="item2">
+                        <input type="checkbox" name="auto" id="auto"/>
+                        <label for="auto">自动登录</label>
+                        <a style="color: blue;" href="">忘记密码?</a>
+                    </div>
+                    <input class="login-btn" type="button" value="登录" onclick="btn()" />
+                </form>
+                <div class="san">
+                    	<div class="kong"></div>
+                    	<div class="disan">第三方登录</div>
+                    	<div class="kong"></div>
+                    </div>
+                    <div class="picc">
+                    	<div class="picc1">
+                    		<img  src="img/002.png" />
+                    	</div>
+                    	<div class="picc2">
+                    		<img  src="img/003.png" />
+                    	</div>		
+                    </div>
+            </div>
+</article>
+
+    <div class="link">
+        <img src="img/004.png" />
+    </div>
+    <script>
+    	function btn(){
+    		var xianshi = document.getElementById("dd");
+    		var name = document.getElementById("username").value;
+    		var pas = document.getElementById('userpwd').value;
+    		if(name== null || name == ''&&pas == null||pas==''){
+    			xianshi.style.display ="block";
+    			
+    		}else{
+    			xianshi.style.display = "none";
+    		}
+    	}
+    </script>
+</body>
+</html>
